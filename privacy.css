@@ -1,9 +1,9 @@
-/* Privacy Policy Page */
-
 .privacy-page {
     padding-top: 80px;
     padding-bottom: 80px;
 }
+
+/* PAGE HEADER */
 
 .privacy-header {
     max-width: 800px;
@@ -15,6 +15,7 @@
     color: var(--coral);
     font-weight: 700;
     letter-spacing: 3px;
+    font-size: 0.85rem;
     margin-bottom: 12px;
 }
 
@@ -27,15 +28,19 @@
 
 .privacy-intro {
     color: var(--violet);
+    font-family: var(--font-body);
     font-size: 1.05rem;
     line-height: 1.8;
 }
 
 .privacy-updated {
     color: #666666;
+    font-family: var(--font-body);
     font-size: 0.9rem;
     margin-top: 18px;
 }
+
+/* PRIVACY POLICY */
 
 .privacy-content {
     max-width: 850px;
@@ -56,9 +61,12 @@
 .privacy-content p {
     color: var(--violet);
     font-family: var(--font-body);
+    font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 0;
 }
+
+/* EMAIL */
 
 .privacy-content a {
     color: var(--violet);
@@ -71,19 +79,17 @@
     color: var(--coral);
 }
 
-.privacy-note {
-    background-color: var(--peach);
-    border-left: 5px solid var(--clay);
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 40px;
+/* KEYBOARD */
+
+.privacy-content a:focus-visible {
+    outline: 3px solid var(--coral);
+    outline-offset: 4px;
 }
 
-.privacy-note p {
-    line-height: 1.7;
-}
+/* RESPONSIVENESS */
 
 @media (max-width: 768px) {
+
     .privacy-page {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -93,11 +99,24 @@
         margin-bottom: 35px;
     }
 
+    .privacy-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .privacy-intro {
+        font-size: 1rem;
+    }
+
     .privacy-content h2 {
         font-size: 1.3rem;
+    }
+
+    .privacy-content p {
+        font-size: 0.95rem;
     }
 
     .privacy-content section {
         margin-bottom: 26px;
     }
+
 }
