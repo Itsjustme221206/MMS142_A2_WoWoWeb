@@ -71,6 +71,7 @@ a { color: var(--violet); }
 .site-header {
   background: var(--white);
   padding-block: .25rem;
+  border-bottom: 2px solid var(--peach);
 }
 
 .site-header .navbar-brand {
